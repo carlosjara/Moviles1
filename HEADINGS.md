@@ -23,7 +23,7 @@ Use the `printf()` function.
 
 A single backtick in a code span: `` ` ``
 
-Please don't use any `<blink>` tags.
+Please dont use any `<blink>` tags.
 
 <p>Use the <code>printf()</code> function.</p>
 
@@ -43,9 +43,9 @@ Code-Block
 > 1.   This is the first list item.
 > 2.   This is the second list item.
 > 
-> Here's some example code:
+> Heres some example code:
 > 
->	return shell_exec("echo $input | $markdown_script");
+>    return shell_exec("echo $input | $markdown_script");
 * * *
 \*this text is surrounded by literal asterisks\*
 ***
