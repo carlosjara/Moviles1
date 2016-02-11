@@ -19,7 +19,7 @@ En este punto, mostraremos algunas de las caracteristicas/diferencias entre esto
 
 -`Valores Nulos` *(Null)*,
 
->Los *Maps* si permite una `Unica Llave` *Null* ( *No*, puede tener `Llaves] duplicadas), y tambien puede tener `Valores` *Null* ( *SI* permite `Valores` duplicados).
+>Los *Maps* si permite una `Unica Llave` *Null* ( *No*, puede tener `Llaves` duplicadas), y tambien puede tener `Valores` *Null* ( *SI* permite `Valores` duplicados).
 >
 >Las *Lists* permiten cualquier cantidad de valores *Null*.
 >
