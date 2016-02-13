@@ -1,6 +1,7 @@
 #Computación Movil y Agentes Moviles
 
 **Carlos Jaramillo**
+
 **Edgar Amezquita**
 
 ####2.
@@ -69,4 +70,5 @@ public class Circulo
 ```
 Con esto igualmente cabe mencionar que el metodo *main* es un metodo estatico.
 
+*Abstract Class*
 
