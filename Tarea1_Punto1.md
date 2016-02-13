@@ -5,7 +5,7 @@
 
 ####1.
 
-*Maps*,*List* y *Sets*, son objetos de "Colletion Framework", que implementan la interfaz "Colletion interface", que pueden ser usados como `Inteface` o como `Class`.
+*Maps*,*List* y *Sets*, son objetos de "Collection Framework", que implementan la interfaz "Colletion interface", que pueden ser usados como `Interface` o como `Class`.
 
 En este punto, mostraremos algunas de las caracteristicas/diferencias entre estos objetos.
 
