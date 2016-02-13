@@ -62,12 +62,11 @@ Como ejemplo para un *static Field* supongamos que queremos acceder a la constan
 >
 >	centro = new Punto(cx, cy);
 >
->	if(r < 0):
+>   if(r < 0):
 >
 >	{
 >
 >		msgEsNegativo();
->
 >		r = -r;
 >
 >	}
