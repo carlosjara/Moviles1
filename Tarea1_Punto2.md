@@ -27,33 +27,51 @@ Como ejemplo para un *static Field* supongamos que queremos acceder a la constan
 >
 >public class Circulo
 >{
+>
 >	//Atributos
+>
 >	**private static double pi = 3.141592;**
+>
 >	**public static in numCiruculos;**
+
 >
 >	private Punto centro; //Coordenadas del centro
+>
 >	private double radio; //radio del circulo
 >
 >//Metodos
 >
 >protected void msdEsNegativo()
 >{
+>
 >	System.out.println("El radio es negativo. Se convierte a Positivo.");
+>
 >}
 >
 >public Cirulo() // constructor va sin parametros
+>
 >{
+>
 >	this(100.0, 100.0, 100,0);
+>
 >}
 >
->public Ciruclo(double cx, double cy, double r) // constructor
+>public Ciruclo(double cx, double cy, double r) // constructor}
+>
 >{
+>
 >	centro = new Punto(cx, cy);
+>
 >	if(r < 0):
+>
 >	{
+>
 >		msgEsNegativo();
+>
 >		r = -r;
+>
 >	}
+>
 >	radio = r;
 >	**numCirculo++;**
 >}
