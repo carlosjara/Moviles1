@@ -24,82 +24,51 @@ class Punto
 	Punto(double cx, double cy)
 
 	{
-
 		x = cx; y = cy;
-
 	}
-
 }
 
 public class Circulo
-
 {
-
 	//Atributos
-
-	**private static double pi = 3.141592;**
-
-	**public static in numCiruculos;**
+	private static double pi = 3.141592;
+	public static in numCiruculos;
 
 	private Punto centro; //Coordenadas del centro
-
 	private double radio; //radio del circulo
 
-//Metodos
-
+    //Metodos
    protected void msdEsNegativo()
-
    {
-
        	System.out.println("El radio es negativo. Se convierte a Positivo.");
-
    }
 
    public Cirulo() // constructor va sin parametros
-
    {
-
       this(100.0, 100.0, 100,0);
-
    }
 
    public Ciruclo(double cx, double cy, double r) // constructor}
-
    {
-
-       	centro = new Punto(cx, cy);
-
-       if(r < 0):
-
+        	centro = new Punto(cx, cy);
+        	if(r < 0):
        	{
-
       		msgEsNegativo();
        		r = -r;
-
        	}
-
        	radio = r;
-
-       	**numCirculo++;**
-
+       	numCirculo++;
    }
 
    public double longCircunferencia()
-
    {
-
-       	__return 2 * pi * radio;__
-
+       	return 2 * pi * radio;
    }
 
    public double areacirculo()
-
    {
-
-       	__return pi * radio * radio;__
-
+       	return pi * radio * radio;
    }
-
 }	
 ```
 Con esto igualmente cabe mencionar que el metodo *main* es un metodo estatico.
