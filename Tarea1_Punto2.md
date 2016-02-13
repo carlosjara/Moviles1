@@ -52,7 +52,7 @@ Como ejemplo para un *static Field* supongamos que queremos acceder a la constan
 >
 >{
 >
->	this(100.0, 100.0, 100,0);
+>   this(100.0, 100.0, 100,0);
 >
 >}
 >
@@ -61,7 +61,6 @@ Como ejemplo para un *static Field* supongamos que queremos acceder a la constan
 >{
 >
 >	centro = new Punto(cx, cy);
->
 >   if(r < 0):
 >
 >	{
