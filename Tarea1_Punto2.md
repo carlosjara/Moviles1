@@ -30,14 +30,14 @@ class Punto
 
 public class Circulo
 {
-	//Atributos
-	private static double pi = 3.141592;
-	public static in numCiruculos;
+   //Atributos
+   private static double pi = 3.141592;
+   public static in numCiruculos;
 
-	private Punto centro; //Coordenadas del centro
-	private double radio; //radio del circulo
+   private Punto centro; //Coordenadas del centro
+   private double radio; //radio del circulo
 
-    //Metodos
+   //Metodos
    protected void msdEsNegativo()
    {
        	System.out.println("El radio es negativo. Se convierte a Positivo.");
