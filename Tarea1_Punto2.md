@@ -6,7 +6,7 @@
 
 ####2.
 
-*Static Fields*
+#####__*Static Fields*__
 
 En muchos casos es necesario usar un atributo (Variable), de la cual se almacene una sola copia para todas las instancias de la clase, esto se conoce como varible globlal, en java se usa la palabra clave *static*. Que no son atributos especificos de un objeto sino más bien son atributos de la clase, esto quiere decir que solo una copia que comparten todos los objetos de la clase.
 
@@ -70,7 +70,7 @@ public class Circulo
 ```
 Con esto igualmente cabe mencionar que el metodo *main* es un metodo estatico.
 
-*Abstract Class*
+#####__*Abstract Class*__
 
 Viendo la jerarquia que puede ocurrir entre clases, podemos decir que una clase es mas especializada si esta mas lejos de la clase raiz, pero es mas generica si esta cerca a la raiz. (Ej. clase **Object**).
 
