@@ -47,57 +47,57 @@ Como ejemplo para un *static Field* supongamos que queremos acceder a la constan
 >
 >//Metodos
 >
->protected void msdEsNegativo()
->{
+>   protected void msdEsNegativo()
+>   {
 >
->	System.out.println("El radio es negativo. Se convierte a Positivo.");
+>       	System.out.println("El radio es negativo. Se convierte a Positivo.");
 >
->}
+>   }
 >
->public Cirulo() // constructor va sin parametros
+>   public Cirulo() // constructor va sin parametros
 >
->{
+>   {
 >
->   this(100.0, 100.0, 100,0);
+>      this(100.0, 100.0, 100,0);
 >
->}
+>   }
 >
->public Ciruclo(double cx, double cy, double r) // constructor}
+>   public Ciruclo(double cx, double cy, double r) // constructor}
 >
->{
+>   {
 >
->	centro = new Punto(cx, cy);
+>       	centro = new Punto(cx, cy);
 >
->   if(r < 0):
+>       if(r < 0):
 >
->	{
+>       	{
 >
->		msgEsNegativo();
->		r = -r;
+>       		msgEsNegativo();
+>       		r = -r;
 >
->	}
+>       	}
 >
->	radio = r;
+>       	radio = r;
 >
->	**numCirculo++;**
+>       	**numCirculo++;**
 >
->}
+>   }
 >
->public double longCircunferencia()
+>   public double longCircunferencia()
 >
->{
+>   {
 >
->	__return 2 * pi * radio;__
+>       	__return 2 * pi * radio;__
 >
->}
+>   }
 >
->public double areacirculo()
+>   public double areacirculo()
 >
->{
+>   {
 >
->	__return pi * radio * radio;__
+>       	__return pi * radio * radio;__
 >
->}
+>   }
 >
 >}	
 >
