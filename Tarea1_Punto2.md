@@ -61,6 +61,7 @@ Como ejemplo para un *static Field* supongamos que queremos acceder a la constan
 >{
 >
 >	centro = new Punto(cx, cy);
+>
 >   if(r < 0):
 >
 >	{
@@ -71,19 +72,29 @@ Como ejemplo para un *static Field* supongamos que queremos acceder a la constan
 >	}
 >
 >	radio = r;
+>
 >	**numCirculo++;**
+>
 >}
 >
 >public double longCircunferencia()
+>
 >{
+>
 >	**return 2 * pi * radio; **
+>
 >}
 >
 >public double areacirculo()
+>
 >{
+>
 >	** return pi * radio * radio; **
+>
 >}
+>
 >}	
+>
 
 Con esto igualmente cabe mencionar que el metodo *main* es un metodo estatico.
 
