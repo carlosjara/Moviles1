@@ -72,3 +72,12 @@ Con esto igualmente cabe mencionar que el metodo *main* es un metodo estatico.
 
 *Abstract Class*
 
+Viendo la jerarquia que puede ocurrir entre clases, podemos decir que una clase es mas especializada si esta mas lejos de la clase raiz, pero es mas generica si esta cerca a la raiz. (Ej. clase **Object**).
+
+Una clase Abstracta, es una clase generica que tan solo define los atributos y el comportamiento mas comun de las clases que le hereden, haciendo que estos los declaren.
+
+De una clase Abstracta es casi seguro que no se creen instancias, su razon de existencia es proporcionar atributos y comportamiento que seran compartidos por sus subclases.
+
+Una clase Abstracta puede contener los mismos tipos de miembros que una clase No Abstracta y ademas puede contener metodos abstractos, que una clase No Abstracta no puede contener, pero no se permite crear instancias de ella.
+
+En el caso de los metodos Abstractos no poseen cuerpo puesto que la idea es que sean redefinidos por las subclases de la clase abstracta, para que estos se adapten a las particularidades de los mas especificos.
