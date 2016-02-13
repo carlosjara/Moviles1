@@ -34,7 +34,8 @@ En este punto, mostraremos algunas de las caracteristicas/diferencias entre esto
 >Las *Lists* y todas sus clases mantienen su orden de insercion.
 >
 >Los *Sets* al igual que los *Maps* no tienen un orden para sus elementos, algunas de sus clases mantiene un orden, clases como `LinkedHashSet`.
->
+
+
 #####Ejemplos.
 
 ######Sets. 
