@@ -16,13 +16,9 @@ Como ejemplo para un *static Field* supongamos que queremos acceder a la constan
 **Ejemplo**
 ```java
 class Punto
-
 {
-
 	private double x, y;
-
 	Punto(double cx, double cy)
-
 	{
 		x = cx; y = cy;
 	}
