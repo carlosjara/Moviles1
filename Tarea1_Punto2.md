@@ -17,15 +17,21 @@ Como ejemplo para un *static Field* supongamos que queremos acceder a la constan
 
 >class Punto
 >{
+>
 >	private double x, y;
 >
 >	Punto(double cx, double cy)
+>
 >	{
+>
 >		x = cx; y = cy;
+>
 >	}
+>
 >}
 >
 >public class Circulo
+>
 >{
 >
 >	//Atributos
@@ -33,7 +39,6 @@ Como ejemplo para un *static Field* supongamos que queremos acceder a la constan
 >	**private static double pi = 3.141592;**
 >
 >	**public static in numCiruculos;**
-
 >
 >	private Punto centro; //Coordenadas del centro
 >
