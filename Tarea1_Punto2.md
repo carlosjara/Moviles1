@@ -81,7 +81,7 @@ Como ejemplo para un *static Field* supongamos que queremos acceder a la constan
 >
 >{
 >
->	**return 2 * pi * radio; **
+>	__return 2 * pi * radio;__
 >
 >}
 >
@@ -89,7 +89,7 @@ Como ejemplo para un *static Field* supongamos que queremos acceder a la constan
 >
 >{
 >
->	** return pi * radio * radio; **
+>	__return pi * radio * radio;__
 >
 >}
 >
