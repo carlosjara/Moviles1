@@ -1,6 +1,7 @@
 ##Computación Movil y Agente Moviles
 ###Carlos Jaramillo
 ###Cristian Carabali
+###Edgar Amezquita
 
 ####1.
 
@@ -24,3 +25,12 @@ En este punto, mostraremos algunas de las caracteristicas/diferencias entre esto
 >Las *Lists* permiten cualquier cantidad de valores *Null*.
 >
 >Los *Sets* a lo mas un valor *Null*.
+>
+
+- `Orden`
+
+>Los *Maps* no almacenan los elementos en un orden, pero algunas de sus subclases si lo hacen, subclases como *TreeMap* ordena los mapas en orden ascendente de las llaves y los *LinkedHashMap* ordena los elementos en orden de insercion, el orden en que los elementos son agregados al *LinkedHashMap*.
+>
+>Las *Lists* y todas sus clases mantienen su orden de insercion.
+>
+>Los *Sets* al igual que los *Maps* no tienen un orden para sus elementos 
