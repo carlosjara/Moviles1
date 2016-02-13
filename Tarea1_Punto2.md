@@ -16,6 +16,7 @@ Como ejemplo para un *static Field* supongamos que queremos acceder a la constan
 **Ejemplo**
 
 >class Punto
+>
 >{
 >
 >	private double x, y;
