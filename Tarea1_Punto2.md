@@ -70,6 +70,9 @@ public class Circulo
 ```
 Con esto igualmente cabe mencionar que el metodo *main* es un metodo estatico.
 
+* * *
+
+
 #####__*Abstract Class*__
 
 Viendo la jerarquia que puede ocurrir entre clases, podemos decir que una clase es mas especializada si esta mas lejos de la clase raiz, pero es mas generica si esta cerca a la raiz. (Ej. clase **Object**).
