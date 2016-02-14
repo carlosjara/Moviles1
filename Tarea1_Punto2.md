@@ -147,7 +147,7 @@ interface Animal {
 }
 ```
 ```java
-/* File name: mammal.java */
+/* File name: Animals.java */
 
 public class Mammal implements Animal{
 	
@@ -195,7 +195,6 @@ class TestAbstraction2{
         
         b1.eat();
         m1.travel;
-
 	m1.eat();
 	b1.travel();
 	m1.numOfLegs();  
