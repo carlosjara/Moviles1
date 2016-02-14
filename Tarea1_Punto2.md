@@ -195,9 +195,9 @@ class TestAbstraction2{
         
         b1.eat();
         m1.travel;
-	m1.eat();
-	b1.travel();
-	m1.numOfLegs();  
+        m1.eat();
+        b1.travel();
+        	m1.numOfLegs();  
     }
 }
 
