@@ -162,7 +162,7 @@ Dentro de las caracteristicas mas importantes de *HashMap* estan:
 -No se garantiza el orden de iteracion dentro del mapa.
 -No permite ni valores nulos (Null), ni llaves duplicadas.
 
-__Codigo__ *Puede encontrarse este Codigo y sus pruebas (con el archivo de resultados .xml) en la carpeta [Vector](https://github.com/carlosjara/Moviles1/tree/master/Punto3/Vector)*
+__Codigo__ *Puede encontrarse este Codigo y sus pruebas (con el archivo de resultados .xml) en la carpeta [HashMap](https://github.com/carlosjara/Moviles1/tree/master/Punto3/HashMap)*
 
 ```java
 package Pruebas;
@@ -211,7 +211,7 @@ La clase *LinkedHashMap* es una tabla hash y una lista enlazada basada en la imp
 
 Esta clase provee de todos los operadores de la Map, y ademas permite valores nulos.
 
-__Codigo__ *Puede encontrarse este Codigo y sus pruebas (con el archivo de resultados .xml) en la carpeta [Vector](https://github.com/carlosjara/Moviles1/tree/master/Punto3/Vector)*
+__Codigo__ *Puede encontrarse este Codigo y sus pruebas (con el archivo de resultados .xml) en la carpeta [LinkedHashMap](https://github.com/carlosjara/Moviles1/tree/master/Punto3/LinkedHashMap)*
 
 ```java
 package Pruebas;
