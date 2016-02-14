@@ -14,8 +14,10 @@ Igualmetne ocurre con los Metodos, cuando se crea un metodo *static*, este sera 
 
 Como ejemplo para un *static Field* supongamos que queremos acceder a la constante **PI** de la clase math cada vez que calculemos el area de un circulo o la longitud de una circunferencia, igualmente, que queremos conocer el numero de instancias de una clase (en este caso, la clase circulo) creados en cada instante. Para esto es mas eficiente asociar lo valores *PI* y *numCiruclos* con la clase que con cada objeto.
 
-**Ejemplo** (*Static Fields*)
+**Ejemplo** (*Static Fields*) *Puede encontrarse este Codigo en la carpeta [Static Fields](http://example.net/)*
 ```java
+package punto2.tarea;
+
 class Punto{
 
 	private double x, y;
@@ -28,7 +30,7 @@ class Punto{
 public class Circulo{
    //Atributos
    private static double pi = 3.141592;
-   public static in numCiruculos;
+   public static int numCirculo;
 
    private Punto centro; //Coordenadas del centro
    private double radio; //radio del circulo
@@ -37,18 +39,20 @@ public class Circulo{
    protected void msdEsNegativo(){
        	System.out.println("El radio es negativo. Se convierte a Positivo.");
    }
-
-   public Cirulo() // constructor va sin parametros{
-      this(100.0, 100.0, 100,0);
+   
+   
+   public Circulo() {
+	   this(1,1,5);
    }
 
-   public Ciruclo(double cx, double cy, double r){ // constructor
-        	centro = new Punto(cx, cy);
-        	if(r < 0):
-       	{
-      		msgEsNegativo();
-       		r = -r;
-       	}
+
+   public Circulo(double cx, double cy, double r){ // constructor
+	   centro = new Punto(cx, cy);
+       if(r < 0)
+       {
+    	   msdEsNegativo();
+    	   r = -r;
+       }
        	radio = r;
        	numCirculo++;
    }
@@ -60,7 +64,22 @@ public class Circulo{
    public double areacirculo(){
        	return pi * radio * radio;
    }
+   
+   public static void main(String [] args){
+	   Circulo obj1 = new Circulo();
+	   System.out.println(obj1.longCircunferencia());
+	   System.out.println(obj1.areacirculo());
+	   
+	   Circulo obj2 = new Circulo();
+	   System.out.println(obj2.longCircunferencia());
+	   System.out.println(obj2.areacirculo());
+	   
+	   System.out.println(Circulo.numCirculo);
+	   
+   }
+   
 }	
+//Ejemplo Tomado de : (MIEMBROS ESTATICOS DE UNA CLASE,Java 2 Curso de Programacion,Fco. Ceballos J.)
 ```
 Con esto igualmente cabe mencionar que el metodo *main* es un metodo estatico.
 
@@ -79,7 +98,7 @@ Una clase Abstracta puede contener los mismos tipos de miembros que una clase No
 
 En el caso de los metodos Abstractos no poseen cuerpo puesto que la idea es que sean redefinidos por las subclases de la clase abstracta, para que estos se adapten a las particularidades de los mas especificos.
 
-__Ejemplo__ (*Abstract Class*)
+__Ejemplo__ (*Abstract Class*) *Puede encontrarse este Codigo en la carpeta [Static Fields](http://example.net/)*
 
 ```java
 abstract class vehicle{
@@ -137,64 +156,72 @@ En otras palablas, una interfaz puede utilizarse para:
 
 - Declarar metodos que una o mas clases deben implementar en determinadas situaciones.
 
-__Ejemplo__ (*interface*)
+__Ejemplo__ (*interface*) *Puede encontrarse estos Codigos en la carpeta [Static Fields](http://example.net/)*
 
 ```java
 /* File name: Animal.java */
-interface Animal {
+public interface Animal {
 	public void eat();
-	public void travel();
+    public void travel();
 }
 ```
 ```java
-/* File name: Animals.java */
+/* File name: Mammal.java */
 
-public class Mammal implements Animal{
-	
-	public Mammal{ // Construct
+public class Mammal implements Animal {
+
+	public Mammal() { //Construct
 		System.out.println("Mammal is created.");
 	}
-	
-	public void eat(){ // Interface method is necessarily implemented by the class.
+
+	@Override
+	public void eat() { // Interface method is necessarily implemented by the class.
 		System.out.println("Mammal eats.");
 	}
-	
-	public void travel(){ //Interface method is necessarily implemented by the class.
-		System.out.println("Mammal travels.");
+
+	@Override
+	public void travel() { //Interface method is necessarily implemented by the class.
+        System.out.println("Mammal travels.");
 	}
 	
-	public int numOfLegs(){ // the class could may have others methods.
-		return 0;
-	}
+    public int numOfLegs(){ // the class could may have others methods.
+        return 0;
+    }
 
 }
+```
+```java
+/* File name: Bird.java */
 
-public class Bird implements Animal{
-        
-        public Bird{ // Construct
-                System.out.println("Bird is created.");
-        }
+public class Birds implements Animal{
 
-        public void eat(){ // Interface method is necessarily implemented by the class.
-                System.out.println("Bird eats.");
-        }
+    public Birds(){ // Construct
+            System.out.println("Bird is created.");
+    }
+    @Override
+    public void eat(){ // Interface method is necessarily implemented by the class.
+            System.out.println("Bird eats.");
+    }
+    @Override
+    public void travel(){ // Interface method is necessarily implemented by the class.
+            System.out.println("Bird travels.");
+    }
 
-        public void travel(){ // Interface method is necessarily implemented by the class.
-                System.out.println("Bird travels.");
-        }
-
-        public int hoursFlight(){ //the clase could may have others methods. 
-                return 0;
-        }
-}
+    public int hoursFlight(){ //the clase could may have others methods. 
+            return 0;
+    }
+}     
+```
+```java
+/* File name: TestAbstraction2.java */
 
 class TestAbstraction2{
     public static void main(String args[]){
         Mammal m1 = new Mammal();
-        Bird b1 = new Bird();
+        Birds b1 = new Birds();
         
         b1.eat();
-        m1.travel;
+        m1.travel();
         m1.eat();
         b1.travel();
         m1.numOfLegs();  
@@ -204,14 +231,12 @@ class TestAbstraction2{
 ```
 ```java
 Output:
-	Mammal is created.
-	Bird is created.	
-
-	Bird eats.
-	Mammal travel.
-
-	Mammal eats.
-	Bird travels.
-	0
+    Mammal is created.
+    Bird is created.
+    Bird eats.
+    Mammal travels.
+    Mammal eats.
+    Bird travels.
+    0
 ```
 
