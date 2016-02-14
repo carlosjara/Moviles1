@@ -1,5 +1,10 @@
 package punto2.tarea;
 
+/**
+ * @author Carlos Jaramillo
+ *
+*/
+
 public class Birds implements Animal{
 
     public Birds(){ // Construct

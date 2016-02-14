@@ -1,5 +1,10 @@
 package punto2.tarea;
 
+/**
+ * @author Carlos Jaramillo
+ *
+*/
+
 class TestAbstraction2{
     public static void main(String args[]){
         Mammal m1 = new Mammal();
