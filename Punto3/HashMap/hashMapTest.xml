@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="hashMapTest" project="T1-Punto3" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="Pruebas.hashMapTest" time="0.253">
+    <testcase name="test100" classname="Pruebas.hashMapTest" time="0.005"/>
+    <testcase name="test10000" classname="Pruebas.hashMapTest" time="0.226"/>
+    <testcase name="test1000" classname="Pruebas.hashMapTest" time="0.022"/>
+  </testsuite>
+</testrun>
