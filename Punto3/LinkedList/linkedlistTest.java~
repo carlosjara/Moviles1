@@ -4,11 +4,6 @@ import java.util.LinkedList;
 
 import org.junit.Test;
 
-/**
- * @author Carlos Jaramillo
- *
-*/
-
 public class linkedlistTest {
 
 	LinkedList<String> list = new LinkedList<String>();

@@ -4,11 +4,6 @@ import java.util.ArrayList;
 
 import org.junit.Test;
 
-/**
- * @author Carlos Jaramillo
- *
-*/
-
 public class arraylistTest {
 	ArrayList<String> arrayList = new ArrayList<String>();
 	

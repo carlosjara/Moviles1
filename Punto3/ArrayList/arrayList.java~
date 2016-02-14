@@ -2,11 +2,6 @@ package Pruebas;
 
 import java.util.ArrayList;
 
-/**
- * @author Carlos Jaramillo
- *
-*/
-
 public class arrayList {
 	
 	public ArrayList<String> arrlist = new ArrayList<String>();

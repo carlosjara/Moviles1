@@ -1,40 +1,34 @@
 package Pruebas;
 
-import java.util.ArrayList;
+import java.util.LinkedList;
 
-/**
- * @author Carlos Jaramillo
- *
-*/
+public class linkedList {
+	public LinkedList<String> linklist = new LinkedList<String>();
 
-public class arrayList {
-	
-	public ArrayList<String> arrlist = new ArrayList<String>();
-	
-	public arrayList(ArrayList<String> alist) {
-		this.arrlist = alist;
+	public linkedList(LinkedList<String> linklist) {
+		this.linklist = linklist;
 	}
-
+	
 	public void addElements(int num){
 		for (int i = 0; i < num; i++) {
-			arrlist.add(i,"A");
+			linklist.add(i,"A");
 			System.out.println("Element is added.");
 		}
 	}
-
+	
 	public void getElements(int num){
 		for (int i = 0; i < num; i++) {
-			arrlist.get(i);
-			System.out.println(("Element: "+arrlist.get(i)));
+			linklist.get(i);
+			System.out.println(("Element: "+linklist.get(i)));
 		}
 	}
 	
 	
 	public void removeElements(int num){
 		for (int i = 0; i < num; i++) {
-			arrlist.remove(0);
+			linklist.remove(0);
 			System.out.println("Element was removed.");
 		}
 	}
-
+	
 }

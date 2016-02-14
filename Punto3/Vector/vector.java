@@ -2,6 +2,11 @@ package Pruebas;
 
 import java.util.Vector;
 
+/**
+ * @author Carlos Jaramillo
+ *
+*/
+
 public class vector {
 	public Vector<String> vctr = new Vector<String>();
 

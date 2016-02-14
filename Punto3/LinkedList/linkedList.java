@@ -2,6 +2,11 @@ package Pruebas;
 
 import java.util.LinkedList;
 
+/**
+ * @author Carlos Jaramillo
+ *
+*/
+
 public class linkedList {
 	public LinkedList<String> linklist = new LinkedList<String>();
 

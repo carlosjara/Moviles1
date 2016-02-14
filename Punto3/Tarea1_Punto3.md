@@ -14,7 +14,7 @@ Los Arrays de java tienen un tamaño fijo, y este no se puede modifiar, es decir
 
 Los Arraylist son creados con un tamaño inicial, pero cuando se supera este tamaño, la coleccion crece automaticamente, y cuando los elementos se borran, el array puede ser reajustado.
 
-__Codigo__ *Puede encontrarse este Codigo y sus pruebas (con el archivo de resultados -xml) en la carpeta [Static Fields](https://github.com/carlosjara/Moviles1/tree/master/Punto2/Static%20Fields)*
+__Codigo__ *Puede encontrarse este Codigo y sus pruebas (con el archivo de resultados .xml) en la carpeta [ArrayList](https://github.com/carlosjara/Moviles1/tree/master/Punto3/ArrayList)*
 
 ```java
 package Pruebas;
@@ -62,7 +62,7 @@ Una de las caracteristicas mas importantes de *LinkedList* ademas de lo comun en
 
 La clase *LinkedList* puede tener un tamaño ilimitado.
 
-__Codigo__ *Puede encontrarse este Codigo y sus pruebas (con el archivo de resultados -xml) en la carpeta [Static Fields](https://github.com/carlosjara/Moviles1/tree/master/Punto2/Static%20Fields)*
+__Codigo__ *Puede encontrarse este Codigo y sus pruebas (con el archivo de resultados .xml) en la carpeta [LinkedList](https://github.com/carlosjara/Moviles1/tree/master/Punto3/LinkedList)*
 
 ```java
 package Pruebas;
@@ -113,7 +113,7 @@ Dentro de las caracteristicas importante de la clase *Vector* estan:
 
 -A diferencia de las otras clases que implementan la interfaz collection, la clase *Vector* es sincronizado.
 
-__Codigo__ *Puede encontrarse este Codigo y sus pruebas (con el archivo de resultados -xml) en la carpeta [Static Fields](https://github.com/carlosjara/Moviles1/tree/master/Punto2/Static%20Fields)*
+__Codigo__ *Puede encontrarse este Codigo y sus pruebas (con el archivo de resultados .xml) en la carpeta [Vector](https://github.com/carlosjara/Moviles1/tree/master/Punto3/Vector)*
 
 ```java
 package Pruebas;

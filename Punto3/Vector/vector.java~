@@ -1,40 +1,33 @@
 package Pruebas;
 
-import java.util.ArrayList;
+import java.util.Vector;
 
-/**
- * @author Carlos Jaramillo
- *
-*/
+public class vector {
+	public Vector<String> vctr = new Vector<String>();
 
-public class arrayList {
-	
-	public ArrayList<String> arrlist = new ArrayList<String>();
-	
-	public arrayList(ArrayList<String> alist) {
-		this.arrlist = alist;
+	public vector(Vector<String> vctr) {
+		this.vctr = vctr;
 	}
-
+	
 	public void addElements(int num){
 		for (int i = 0; i < num; i++) {
-			arrlist.add(i,"A");
+			vctr.add(i,"A");
 			System.out.println("Element is added.");
 		}
 	}
-
+	
 	public void getElements(int num){
 		for (int i = 0; i < num; i++) {
-			arrlist.get(i);
-			System.out.println(("Element: "+arrlist.get(i)));
+			vctr.get(i);
+			System.out.println(("Element: "+vctr.get(i)));
 		}
 	}
 	
 	
 	public void removeElements(int num){
 		for (int i = 0; i < num; i++) {
-			arrlist.remove(0);
+			vctr.remove(0);
 			System.out.println("Element was removed.");
 		}
 	}
-
 }
