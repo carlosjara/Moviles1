@@ -14,7 +14,7 @@ Igualmetne ocurre con los Metodos, cuando se crea un metodo *static*, este sera 
 
 Como ejemplo para un *static Field* supongamos que queremos acceder a la constante **PI** de la clase math cada vez que calculemos el area de un circulo o la longitud de una circunferencia, igualmente, que queremos conocer el numero de instancias de una clase (en este caso, la clase circulo) creados en cada instante. Para esto es mas eficiente asociar lo valores *PI* y *numCiruclos* con la clase que con cada objeto.
 
-**Ejemplo** (*Static Fields*) *Puede encontrarse este Codigo en la carpeta [Static Fields](http://example.net/)*
+**Ejemplo** (*Static Fields*) *Puede encontrarse este Codigo en la carpeta [Static Fields](https://github.com/carlosjara/Moviles1/tree/master/Punto2/Static%20Fields)*
 ```java
 package punto2.tarea;
 
@@ -98,7 +98,7 @@ Una clase Abstracta puede contener los mismos tipos de miembros que una clase No
 
 En el caso de los metodos Abstractos no poseen cuerpo puesto que la idea es que sean redefinidos por las subclases de la clase abstracta, para que estos se adapten a las particularidades de los mas especificos.
 
-__Ejemplo__ (*Abstract Class*) *Puede encontrarse este Codigo en la carpeta [Static Fields](http://example.net/)*
+__Ejemplo__ (*Abstract Class*) *Puede encontrarse este Codigo en la carpeta [Abstract Class](https://github.com/carlosjara/Moviles1/tree/master/Punto2/Abstract%20Class)*
 
 ```java
 abstract class vehicle{
@@ -156,7 +156,7 @@ En otras palablas, una interfaz puede utilizarse para:
 
 - Declarar metodos que una o mas clases deben implementar en determinadas situaciones.
 
-__Ejemplo__ (*interface*) *Puede encontrarse estos Codigos en la carpeta [Static Fields](http://example.net/)*
+__Ejemplo__ (*interface*) *Puede encontrarse estos Codigos en la carpeta [Interface](https://github.com/carlosjara/Moviles1/tree/master/Punto2/Interface)*
 
 ```java
 /* File name: Animal.java */
