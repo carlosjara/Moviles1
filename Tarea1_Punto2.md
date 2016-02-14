@@ -86,8 +86,7 @@ abstract class vehicle{
     vehicle(){
         System.out.println("--Vehicle is created--");
     }
-    abstract void run();
-    
+    abstract void run();    
 }
 
 class Bike extends vehicle{
