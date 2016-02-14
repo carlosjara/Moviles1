@@ -16,8 +16,8 @@ Como ejemplo para un *static Field* supongamos que queremos acceder a la constan
 
 **Ejemplo**
 ```java
-class Punto
-{
+class Punto{
+
 	private double x, y;
 	Punto(double cx, double cy)
 	{
@@ -25,8 +25,7 @@ class Punto
 	}
 }
 
-public class Circulo
-{
+public class Circulo{
    //Atributos
    private static double pi = 3.141592;
    public static in numCiruculos;
@@ -35,18 +34,15 @@ public class Circulo
    private double radio; //radio del circulo
 
    //Metodos
-   protected void msdEsNegativo()
-   {
+   protected void msdEsNegativo(){
        	System.out.println("El radio es negativo. Se convierte a Positivo.");
    }
 
-   public Cirulo() // constructor va sin parametros
-   {
+   public Cirulo() // constructor va sin parametros{
       this(100.0, 100.0, 100,0);
    }
 
-   public Ciruclo(double cx, double cy, double r) // constructor}
-   {
+   public Ciruclo(double cx, double cy, double r){ // constructor
         	centro = new Punto(cx, cy);
         	if(r < 0):
        	{
@@ -57,13 +53,11 @@ public class Circulo
        	numCirculo++;
    }
 
-   public double longCircunferencia()
-   {
+   public double longCircunferencia(){
        	return 2 * pi * radio;
    }
 
-   public double areacirculo()
-   {
+   public double areacirculo(){
        	return pi * radio * radio;
    }
 }	
@@ -84,3 +78,48 @@ De una clase Abstracta es casi seguro que no se creen instancias, su razon de ex
 Una clase Abstracta puede contener los mismos tipos de miembros que una clase No Abstracta y ademas puede contener metodos abstractos, que una clase No Abstracta no puede contener, pero no se permite crear instancias de ella.
 
 En el caso de los metodos Abstractos no poseen cuerpo puesto que la idea es que sean redefinidos por las subclases de la clase abstracta, para que estos se adapten a las particularidades de los mas especificos.
+
+__Ejemplo__
+
+```java
+abstract class vehicle{
+    vehicle(){
+        System.out.println("--Vehicle is created--");
+    }
+    abstract void run();
+    
+}
+
+class Bike extends vehicle{
+    void run(){
+        System.out.println("--BIKE-- Running Safely...");
+    }
+}
+
+class Car extends vehicle{
+    void run(){
+        System.out.println("--CAR-- Running Safely...");
+    }
+}
+
+class TestAbstraction1{
+    public static void main(String args[]){
+        Car car1 = new Car();
+        Bike bike1 = new Bike();
+        
+        car1.run();
+        bike1.run();  
+    }  
+} 
+
+```
+* * *
+```java
+Output:
+    --Vehicle is created--
+    --Vehicle is created--
+    
+    --CAR-- Running Safely...
+    --BIKE-- Running Safely...
+```
+* * *
