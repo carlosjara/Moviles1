@@ -112,7 +112,7 @@ class TestAbstraction1{
 } 
 
 ```
-* * *
+
 ```java
 Output:
     --Vehicle is created--
@@ -122,3 +122,97 @@ Output:
     --BIKE-- Running Safely...
 ```
 * * *
+####__*Interface*__
+
+Para sistemas que contienen objetos  inconexos se definen las interfaces en donde este sirve de conexion entre estas objetos. Las interfaces definen un conjunto de mensajes que se pueden aplicar a muchas clases de objetos, a lo qeu cada una de ellas debe responder de forma adecuada. 
+
+Las clases tambien pueden recibir el nombre de **Protocolo**, todos los metodos declarados en una interfaz son *public* y *abstract* (implicitamente), y todos su constantes son *public*, *final* y *static*.
+
+Cualquier clase puede acceder a las constantes de una interfaz, a traves del nombre de la misma. Pero si una clase la implementa puede acceder a las constantes, como si las hubiese heredado, es decir, directamente con su nombre.
+
+Si una `clase implementa (*implements*) una interfaz debe declarar **TODOS** los metodos definidos` en la ultima. Al implementar una interfaz, todas las subclases heredan los metodos y constantes de la interfaz.
+
+En otras palablas, una interfaz puede utilizarse para:
+- Capturar similitudes entre clases no relacionadas sin forzar a una relacion artificial entre ellas.
+
+- Declarar metodos que una o mas clases deben implementar en determinadas situaciones.
+
+__Ejemplo__ (*interface*)
+
+```java
+/* File name: Animal.java */
+interface Animal {
+	public void eat();
+	public void travel();
+}
+```
+```java
+/* File name: mammal.java */
+
+public class Mammal implements Animal{
+	
+	public Mammal{ // Construct
+		System.out.println("Mammal is created.");
+	}
+	
+	public void eat(){ // Interface method is necessarily implemented by the class.
+		System.out.println("Mammal eats.");
+	}
+	
+	public void travel(){ //Interface method is necessarily implemented by the class.
+		System.out.println("Mammal travels.");
+	}
+	
+	public int numOfLegs(){ // the class could may have others methods.
+		return 0;
+	}
+
+}
+
+public class Bird implements Animal{
+        
+        public Bird{ // Construct
+                System.out.println("Bird is created.");
+        }
+
+        public void eat(){ // Interface method is necessarily implemented by the class.
+                System.out.println("Bird eats.");
+        }
+
+        public void travel(){ // Interface method is necessarily implemented by the class.
+                System.out.println("Bird travels.");
+        }
+
+        public int hoursFlight(){ //the clase could may have others methods. 
+                return 0;
+        }
+}
+
+class TestAbstraction2{
+    public static void main(String args[]){
+        Mammal m1 = new Mammal();
+        Bird b1 = new Bird();
+        
+        b1.eat();
+        m1.travel;
+
+	m1.eat();
+	b1.travel();
+	m1.numOfLegs();  
+    }
+}
+
+```
+```java
+Output:
+	Mammal is created.
+	Bird is created.	
+
+	Bird eats.
+	Mammal travel.
+
+	Mammal eats.
+	Bird travels.
+	0
+```
+
