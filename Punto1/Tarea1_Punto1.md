@@ -38,4 +38,4 @@ En este punto, mostraremos algunas de las caracteristicas/diferencias entre esto
 
 #####Ejemplos.
 
-######Sets. 
+>Los ejemplos se encuentran en la carpeta.
