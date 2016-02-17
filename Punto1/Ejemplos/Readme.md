@@ -7,7 +7,8 @@
 -Maps
 >Si queremos modelar un inventario de cuantos objetos de un tipo tenemos, esta estructura nos permite no tener duplicados en cuanto al tipo del objeto
  por ejemplo si queremos saber cuantos modelo de un carro tenemos, la llave seria el modelo del carro y el valor seria la cantidad que hay. 
->Asi se podria implementar en java(sacado de:*http://examples.javacodegeeks.com/java-basics/java-map-example/*):
+>Asi se podria implementar en java(sacado de: [javacodegeeks](http://examples.javacodegeeks.com/java-basics/java-map-example/)):
+
 ```java
 import java.util.HashMap;
 import java.util.Map;
@@ -43,10 +44,12 @@ public class HashMapExample {
     }
 }
 ```
+
 -Sets
 >Si queremos saber si hay elementos repetidos podemos usar un set y luego comparar la logitud del array con la del set para
 poder saber si hay repetidos, o en el caso de que necesitemos guardar valores que no se puedan repartir.
->Asi se podria implementar en java(sacado de:*http://examples.javacodegeeks.com/java-basics/java-set-example/*):
+>Asi se podria implementar en java(sacado de: [javacodegeeks](http://examples.javacodegeeks.com/java-basics/java-set-example/) ):
+
 ```java
 import java.util.*;
 
@@ -118,4 +121,36 @@ public class SetExample {
 ```
 -List
 > Si queremos guardar varios elementos y estos pueden repetirse, hacer una lista es una muy buena idea ya que esta conserva indices para indicar la posición de los elementos,
-con las listas podemos hacer un inventario mas sencillo, donde solo estarian los productos que hay, o tambien podria ser una lista de estudiantes/ 
+con las listas podemos hacer un inventario mas sencillo, donde solo estarian los productos que hay, o tambien podria ser una lista de estudiantes.
+Ejemplo tomado de [jarroba](http://jarroba.com/arraylist-en-java-ejemplos/)
+ 
+```java
+// Declaración de un ArrayList de "String". Puede ser de cualquier otro Elemento u Objeto (float, Boolean, Object, ...)
+ArrayList<String> nombreArrayList = new ArrayList<String>();
+// Añade el elemento al ArrayList
+nombreArrayList.add("Elemento");
+// Añade el elemento al ArrayList en la posición 'n'
+nombreArrayList.add(n, "Elemento 2");
+// Devuelve el numero de elementos del ArrayList
+nombreArrayList.size();
+// Devuelve el elemento que esta en la posición '2' del ArrayList
+nombreArrayList.get(2);
+// Comprueba se existe del elemento ('Elemento') que se le pasa como parametro
+nombreArrayList.contains("Elemento");
+// Devuelve la posición de la primera ocurrencia ('Elemento') en el ArrayList  
+nombreArrayList.indexOf("Elemento");
+// Devuelve la posición de la última ocurrencia ('Elemento') en el ArrayList   
+nombreArrayList.lastIndexOf("Elemento");
+// Borra el elemento de la posición '5' del ArrayList   
+nombreArrayList.remove(5); 
+// Borra la primera ocurrencia del 'Elemento' que se le pasa como parametro.  
+nombreArrayList.remove("Elemento");
+//Borra todos los elementos de ArrayList   
+nombreArrayList.clear();
+// Devuelve True si el ArrayList esta vacio. Sino Devuelve False   
+nombreArrayList.isEmpty();  
+// Copiar un ArrayList 
+ArrayList arrayListCopia = (ArrayList) nombreArrayList.clone();  
+// Pasa el ArrayList a un Array 
+Object[] array = nombreArrayList.toArray();   
+```
