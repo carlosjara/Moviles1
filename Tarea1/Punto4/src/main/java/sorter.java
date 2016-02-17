@@ -1,5 +1,9 @@
 import java.util.List;
-
+/**
+ * @author Carlos Jaramillo
+ * @author Edgar Amezquita
+ *
+*/
 public class sorter {
 	private IComparisonStrategy stratToApply;
 	

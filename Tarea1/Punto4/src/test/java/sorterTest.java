@@ -4,6 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.junit.Test;
+/**
+ * @author Carlos Jaramillo
+ * @author Edgar Amezquita
+ *
+*/
 
 public class sorterTest {
 	

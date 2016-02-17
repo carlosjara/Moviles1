@@ -1,4 +1,8 @@
-
+/**
+ * @author Carlos Jaramillo
+ * @author Edgar Amezquita
+ *
+*/
 public class Student {
 	private String name;
 	private String career;
