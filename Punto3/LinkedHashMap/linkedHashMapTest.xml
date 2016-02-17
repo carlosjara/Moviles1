@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="linkedHashMapTest" project="T1-Punto3" tests="3" started="3" failures="0" errors="0" ignored="0">
-  <testsuite name="Pruebas.linkedHashMapTest" time="0.298">
-    <testcase name="test100" classname="Pruebas.linkedHashMapTest" time="0.002"/>
-    <testcase name="test10000" classname="Pruebas.linkedHashMapTest" time="0.282"/>
-    <testcase name="test1000" classname="Pruebas.linkedHashMapTest" time="0.014"/>
-  </testsuite>
-</testrun>

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="arraylistTest" project="T1-Punto3" tests="3" started="3" failures="0" errors="0" ignored="0">
-  <testsuite name="Pruebas.arraylistTest" time="0.264">
-    <testcase name="test100" classname="Pruebas.arraylistTest" time="0.012"/>
-    <testcase name="test10000" classname="Pruebas.arraylistTest" time="0.222"/>
-    <testcase name="test1000" classname="Pruebas.arraylistTest" time="0.03"/>
-  </testsuite>
-</testrun>
