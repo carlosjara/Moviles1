@@ -1,4 +1,8 @@
 # Computación moviles y agentes moviles
-[EdgarM-](https://github.com/EdgarM- "EdgarM-")
+##Tareas para el curso de Computación moviles y agentes moviles
+### Implementadas por:
+#### [EdgarM-](https://github.com/EdgarM- "EdgarM-")
 
-[Carlosjara](https://github.com/carlosjara "carlosjara")
+#### [Carlosjara](https://github.com/carlosjara "carlosjara")
+
+####Pontificia Universida Javeriana
