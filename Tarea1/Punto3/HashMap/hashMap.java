@@ -4,6 +4,7 @@ import java.util.HashMap;
 
 /**
  * @author Carlos Jaramillo
+ * @author Edgar Amezquita
  *
 */
 

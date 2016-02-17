@@ -2,6 +2,7 @@ package punto2.tarea;
 
 /**
  * @author Carlos Jaramillo
+ * @author Edgar Amezquita
  *
 */
 

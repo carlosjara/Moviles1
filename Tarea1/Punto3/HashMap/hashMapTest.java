@@ -8,6 +8,7 @@ import org.junit.Test;
 
 /**
  * @author Carlos Jaramillo
+ * @author Edgar Amezquita
  *
 */
 

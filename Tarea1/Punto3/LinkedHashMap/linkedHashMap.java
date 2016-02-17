@@ -4,6 +4,7 @@ import java.util.LinkedHashMap;
 
 /**
  * @author Carlos Jaramillo
+ * @author Edgar Amezquita
  *
 */
 

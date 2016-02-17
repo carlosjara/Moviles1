@@ -1,7 +1,6 @@
 package punto2.tarea;
 
 /**
- * @author Carlos Jaramillo
  * Ejemplo Tomado de : (MIEMBROS ESTATICOS DE UNA CLASE,Java 2 Curso de Programacion,Fco. Ceballos J.)
 */
 class Punto{

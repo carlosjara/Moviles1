@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 /**
  * @author Carlos Jaramillo
+ * @author Edgar Amezquita
  *
 */
 

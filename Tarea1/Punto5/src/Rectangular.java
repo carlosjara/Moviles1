@@ -1,4 +1,8 @@
-
+/**
+ * @author Carlos Jaramillo
+ * @author Edgar Amezquita
+ *
+*/
 public class Rectangular extends GeometricFigure {
 	private double height;
 	private double width;

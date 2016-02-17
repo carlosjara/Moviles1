@@ -4,6 +4,7 @@ import java.util.LinkedList;
 
 /**
  * @author Carlos Jaramillo
+ * @author Edgar Amezquita
  *
 */
 

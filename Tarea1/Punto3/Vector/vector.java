@@ -4,6 +4,7 @@ import java.util.Vector;
 
 /**
  * @author Carlos Jaramillo
+ * @author Edgar Amezquita
  *
 */
 

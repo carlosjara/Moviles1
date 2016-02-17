@@ -1,4 +1,8 @@
-
+/**
+ * @author Carlos Jaramillo
+ * @author Edgar Amezquita
+ *
+*/
 public class Square extends GeometricFigure {
 	private double edge;
 	

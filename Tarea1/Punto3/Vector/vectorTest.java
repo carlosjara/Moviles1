@@ -6,9 +6,9 @@ import org.junit.Test;
 
 /**
  * @author Carlos Jaramillo
+ * @author Edgar Amezquita
  *
 */
-
 public class vectorTest {
 
 	Vector<String> vector = new Vector<String>();

@@ -1,6 +1,5 @@
 ##Computación Movil y Agente Moviles
 ###Carlos Jaramillo
-###Cristian Carabali
 ###Edgar Amezquita
 
 ####1.

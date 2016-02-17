@@ -1,4 +1,8 @@
-
+/**
+ * @author Carlos Jaramillo
+ * @author Edgar Amezquita
+ *
+*/
 public abstract class GeometricFigure {
 	private String name;
 	private String description;

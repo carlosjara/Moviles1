@@ -1,4 +1,8 @@
-
+/**
+ * @author Carlos Jaramillo
+ * @author Edgar Amezquita
+ *
+*/
 public class Circle extends GeometricFigure {
 
 	private double pi;
