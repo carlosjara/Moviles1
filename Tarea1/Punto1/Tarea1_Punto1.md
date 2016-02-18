@@ -1,7 +1,7 @@
 ##Computación Movil y Agente Moviles
 ###Carlos Jaramillo
 ###Edgar Amezquita
-
+###Cristian Carabalí
 ####1.
 
 *Maps*,*List* y *Sets*, son objetos de "Collection Framework", que implementan la interfaz "Colletion interface", que pueden ser usados como `Interface` o como `Class`.
