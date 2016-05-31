@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="aplicaciones.carlosjara.com.concentrate.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="concentrate"
+        android:gravity="center|center_horizontal"
+        android:nestedScrollingEnabled="false"
+        android:id="@+id/tituloaplicacion"
+        android:textAlignment="gravity"
+        android:textColor="#1505ff"
+        android:textSize="40dp"
+        android:layout_weight="4"/>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Usuario 1"
+        android:editable="true"
+        android:textColorHighlight="#000000"
+        android:layout_below="@+id/spinner"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/username2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Usuario 2"
+        android:editable="true"
+        android:textColorHighlight="#000000"
+        android:layout_below="@+id/username"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iniciar"
+        android:id="@+id/BIniciar"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#ffffff"
+        android:textColor="#0000ff"
+        android:layout_gravity="center"
+        android:onClick="ejecutar" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:layout_below="@+id/Seleccion"
+        android:layout_alignStart="@+id/tituloaplicacion"
+        android:spinnerMode="dropdown" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seleccion No. Jugadores"
+        android:id="@+id/Seleccion"
+        android:layout_below="@+id/tituloaplicacion"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Concentrate</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_juego">Juego</string>
+
+    <string-array name="Jugadores">
+        <item>1 Jugador</item>
+        <item>2 Jugadores</item>
+    </string-array>
+</resources>
