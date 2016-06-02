@@ -1,0 +1,12 @@
+PODS:
+  - SQLite.swift (0.10.1)
+
+DEPENDENCIES:
+  - SQLite.swift (~> 0.10)
+
+SPEC CHECKSUMS:
+  SQLite.swift: 6a6e4b034efc317ce4e203b6af2d3024fee2b570
+
+PODFILE CHECKSUM: 7a48c6e7da2bc60f176452ffb3dfd445ab7ea27e
+
+COCOAPODS: 1.0.0

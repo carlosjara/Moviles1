@@ -1,0 +1,6 @@
+target 'PruebaInicial' do
+  use_frameworks!
+  pod 'SQLite.swift', '~> 0.10'
+  # Pods for PruebaInicial
+
+end
