@@ -15,7 +15,13 @@
 		7805B8B31CF8C41F002A76F3 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7805B8B21CF8C41F002A76F3 /* Contact.swift */; };
 		7805B8B51CF8C73D002A76F3 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7805B8B41CF8C73D002A76F3 /* Message.swift */; };
 		7805B8DD1CF90B09002A76F3 /* ContactManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7805B8DC1CF90B09002A76F3 /* ContactManager.swift */; };
+		933353B31D0343C700B43210 /* MessageArrayGETService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933353B21D0343C700B43210 /* MessageArrayGETService.swift */; };
+		933353B51D03443700B43210 /* MessagePOSTService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933353B41D03443700B43210 /* MessagePOSTService.swift */; };
 		938B92E01CFF952A000BC47B /* CustomMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938B92DF1CFF952A000BC47B /* CustomMessageTableViewCell.swift */; };
+		938DB9111D0328E0005DF1EC /* ContactArrayGETService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938DB9101D0328E0005DF1EC /* ContactArrayGETService.swift */; };
+		939DD1831D029CD700BB75B5 /* MessageStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939DD1821D029CD700BB75B5 /* MessageStorage.swift */; };
+		939DD1871D02C0FF00BB75B5 /* TabBarController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939DD1861D02C0FF00BB75B5 /* TabBarController1.swift */; };
+		939DD1891D02C77400BB75B5 /* ChatView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939DD1881D02C77400BB75B5 /* ChatView2.swift */; };
 		93B5F9333A225D92002CE93D /* Pods_PruebaInicial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B882EDDDC810556AE9FAF11 /* Pods_PruebaInicial.framework */; };
 		93C0E8E41CFE2CCF0071CAA5 /* sContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C0E8E31CFE2CCF0071CAA5 /* sContactView.swift */; };
 		93C0E8E61CFE44C00071CAA5 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C0E8E51CFE44C00071CAA5 /* CustomTableViewCell.swift */; };
@@ -36,7 +42,13 @@
 		7805B8B21CF8C41F002A76F3 /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		7805B8B41CF8C73D002A76F3 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		7805B8DC1CF90B09002A76F3 /* ContactManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactManager.swift; sourceTree = "<group>"; };
+		933353B21D0343C700B43210 /* MessageArrayGETService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageArrayGETService.swift; sourceTree = "<group>"; };
+		933353B41D03443700B43210 /* MessagePOSTService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagePOSTService.swift; sourceTree = "<group>"; };
 		938B92DF1CFF952A000BC47B /* CustomMessageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMessageTableViewCell.swift; sourceTree = "<group>"; };
+		938DB9101D0328E0005DF1EC /* ContactArrayGETService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactArrayGETService.swift; sourceTree = "<group>"; };
+		939DD1821D029CD700BB75B5 /* MessageStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageStorage.swift; sourceTree = "<group>"; };
+		939DD1861D02C0FF00BB75B5 /* TabBarController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController1.swift; sourceTree = "<group>"; };
+		939DD1881D02C77400BB75B5 /* ChatView2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatView2.swift; sourceTree = "<group>"; };
 		93C0E8E31CFE2CCF0071CAA5 /* sContactView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sContactView.swift; sourceTree = "<group>"; };
 		93C0E8E51CFE44C00071CAA5 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		93C0E8E71CFE61860071CAA5 /* ChatView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
@@ -77,11 +89,13 @@
 		7805B89F1CF8C177002A76F3 /* PruebaInicial */ = {
 			isa = PBXGroup;
 			children = (
+				939DD1811D029C5D00BB75B5 /* DB */,
 				7805B8DB1CF90AF9002A76F3 /* Managers */,
-				7805B8B81CF8CAB5002A76F3 /* DB */,
 				7805B8B71CF8CAAA002A76F3 /* Rest */,
 				7805B8B61CF8CA90002A76F3 /* Model */,
 				7805B8A01CF8C177002A76F3 /* AppDelegate.swift */,
+				939DD1881D02C77400BB75B5 /* ChatView2.swift */,
+				939DD1861D02C0FF00BB75B5 /* TabBarController1.swift */,
 				7805B8A21CF8C177002A76F3 /* ViewController.swift */,
 				93C0E8E71CFE61860071CAA5 /* ChatView.swift */,
 				93C0E8E31CFE2CCF0071CAA5 /* sContactView.swift */,
@@ -107,15 +121,11 @@
 		7805B8B71CF8CAAA002A76F3 /* Rest */ = {
 			isa = PBXGroup;
 			children = (
+				938DB9101D0328E0005DF1EC /* ContactArrayGETService.swift */,
+				933353B21D0343C700B43210 /* MessageArrayGETService.swift */,
+				933353B41D03443700B43210 /* MessagePOSTService.swift */,
 			);
 			name = Rest;
-			sourceTree = "<group>";
-		};
-		7805B8B81CF8CAB5002A76F3 /* DB */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = DB;
 			sourceTree = "<group>";
 		};
 		7805B8DB1CF90AF9002A76F3 /* Managers */ = {
@@ -125,6 +135,14 @@
 				93C0E8E91CFE62B80071CAA5 /* ChatManager.swift */,
 			);
 			name = Managers;
+			sourceTree = "<group>";
+		};
+		939DD1811D029C5D00BB75B5 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				939DD1821D029CD700BB75B5 /* MessageStorage.swift */,
+			);
+			name = DB;
 			sourceTree = "<group>";
 		};
 		B891799AB688B9714C75B79E /* Pods */ = {
@@ -269,13 +287,19 @@
 				7805B8B31CF8C41F002A76F3 /* Contact.swift in Sources */,
 				93C0E8E61CFE44C00071CAA5 /* CustomTableViewCell.swift in Sources */,
 				7805B8B51CF8C73D002A76F3 /* Message.swift in Sources */,
+				939DD1831D029CD700BB75B5 /* MessageStorage.swift in Sources */,
 				93C0E8EA1CFE62B80071CAA5 /* ChatManager.swift in Sources */,
 				93C0E8E41CFE2CCF0071CAA5 /* sContactView.swift in Sources */,
+				938DB9111D0328E0005DF1EC /* ContactArrayGETService.swift in Sources */,
+				933353B31D0343C700B43210 /* MessageArrayGETService.swift in Sources */,
 				93C0E8E81CFE61860071CAA5 /* ChatView.swift in Sources */,
 				7805B8A31CF8C177002A76F3 /* ViewController.swift in Sources */,
 				7805B8DD1CF90B09002A76F3 /* ContactManager.swift in Sources */,
 				938B92E01CFF952A000BC47B /* CustomMessageTableViewCell.swift in Sources */,
+				939DD1871D02C0FF00BB75B5 /* TabBarController1.swift in Sources */,
 				7805B8A11CF8C177002A76F3 /* AppDelegate.swift in Sources */,
+				939DD1891D02C77400BB75B5 /* ChatView2.swift in Sources */,
+				933353B51D03443700B43210 /* MessagePOSTService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

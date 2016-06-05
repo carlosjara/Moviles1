@@ -1,6 +1,9 @@
 target 'PruebaInicial' do
   use_frameworks!
   pod 'SQLite.swift', '~> 0.10'
+  pod 'Alamofire', '~> 3.4'
+  pod 'SwiftyJSON'
+  pod 'Restofire', '~> 1.1'
   # Pods for PruebaInicial
 
 end

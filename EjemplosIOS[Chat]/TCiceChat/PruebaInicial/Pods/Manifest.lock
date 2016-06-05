@@ -1,12 +1,24 @@
 PODS:
+  - Alamofire (3.4.0)
+  - Restofire (1.1.0):
+    - Restofire/Core (= 1.1.0)
+  - Restofire/Core (1.1.0):
+    - Alamofire (~> 3.0)
   - SQLite.swift (0.10.1)
+  - SwiftyJSON (2.3.2)
 
 DEPENDENCIES:
+  - Alamofire (~> 3.4)
+  - Restofire (~> 1.1)
   - SQLite.swift (~> 0.10)
+  - SwiftyJSON
 
 SPEC CHECKSUMS:
+  Alamofire: c19a627cefd6a95f840401c49ab1f124e07f54ee
+  Restofire: d5b61a83a943273347bd77175d50d276236ca399
   SQLite.swift: 6a6e4b034efc317ce4e203b6af2d3024fee2b570
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
-PODFILE CHECKSUM: 7a48c6e7da2bc60f176452ffb3dfd445ab7ea27e
+PODFILE CHECKSUM: 562a1dc83d3077eadb5bd24b3d20b71754ba6cde
 
 COCOAPODS: 1.0.0

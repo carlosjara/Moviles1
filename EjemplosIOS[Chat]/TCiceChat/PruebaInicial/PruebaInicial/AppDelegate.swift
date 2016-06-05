@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Restofire
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +16,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        Restofire.defaultConfiguration.baseURL = "http://10.5.99.30:8191/rest"
+        Restofire.defaultConfiguration.headers = ["Content-Type": "application/json"]
+        //Restofire.defaultConfiguration.logging = true
+        Restofire.defaultConfiguration.validation.acceptableStatusCodes = [200..<300]
+        Restofire.defaultConfiguration.validation.acceptableContentTypes = ["application/json"]
+        Restofire.defaultConfiguration.retry.retryErrorCodes = [NSURLErrorTimedOut,NSURLErrorNetworkConnectionLost]
+        Restofire.defaultConfiguration.retry.retryInterval = 20
+        Restofire.defaultConfiguration.retry.maxRetryAttempts = 10
+        let sessionConfiguration = NSURLSessionConfiguration.defaultSessionConfiguration()
+        sessionConfiguration.timeoutIntervalForRequest = 7
+        sessionConfiguration.timeoutIntervalForResource = 7
+        
         return true
     }
 

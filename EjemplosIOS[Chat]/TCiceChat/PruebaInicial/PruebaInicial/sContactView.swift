@@ -4,7 +4,7 @@
 //
 //  Created by Estudiantes on 5/31/16.
 //  Copyright © 2016 TCIceChat. All rights reserved.
-//
+///Users/estudiantes/Documents/Native Instruments/FM8/Moviles[ea-cj]_3/TCiceChat/PruebaInicial/PruebaInicial.xcodeproj
 
 import UIKit
 
@@ -16,6 +16,7 @@ class sContactViewController: UIViewController, UITableViewDataSource {
     var cManager = ContactManager ()
     var nombreUserDestino:Contact = Contact(id: 1,name: "a",userName: "b")
     var nombreUserRemitente:Contact = Contact(id: 1,name: "a",userName: "b")
+    var userRemitente : Int = 0
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell:CustomTableViewCell = tableView.dequeueReusableCellWithIdentifier("Custom01") as! CustomTableViewCell
@@ -34,22 +35,38 @@ class sContactViewController: UIViewController, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         cManager.getContacts(idEntrar)
-        let nameRemitente:String = (cManager.getContactAt(idEntrar)?.name)!
-        let userNameRemitente:String = (cManager.getContactAt(idEntrar)?.userName)!
+        print("--------")
+        let nameRemitente:String = "Puta MAdre Carlos"
+        let userNameRemitente:String = "Puta"
         //cManager.getContactAt(idEntrar)?.userName
-        lblID.text? = "Usuario: \(idEntrar)"
         nombreUserRemitente = Contact(id: idEntrar, name: nameRemitente, userName: userNameRemitente)
+        lblID.text? = "usuario: \(idEntrar)"
+        
+        let seconds = 0.5
+        let delay = seconds*Double(NSEC_PER_SEC)
+        let dispatchtime = dispatch_time(DISPATCH_TIME_NOW,Int64(delay))
+        dispatch_after(dispatchtime, dispatch_get_main_queue(), {
+            self.viewWillAppear(true)
+        
+        })
     }
-    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if(segue.identifier == "Tab1Conversar"){
+            nombreUserDestino = cManager.getContactAt((tableView.indexPathForSelectedRow?.row)!)!
+            userRemitente = idEntrar//cManager.getContactAt(idEntrar)!
+            print("Id from",nombreUserDestino.id,"Id to",nombreUserRemitente.id)
+        }
+        (segue.destinationViewController as! TabBarController1).nombreUserDestino = nombreUserDestino
+        (segue.destinationViewController as! TabBarController1).userRemitente = userRemitente
+    }
+    /*override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if(segue.identifier == "Conversar"){
             nombreUserDestino = cManager.getContactAt((tableView.indexPathForSelectedRow?.row)!)!
             nombreUserRemitente = cManager.getContactAt(idEntrar)!
         }
         (segue.destinationViewController as! ChatView).userDestino = nombreUserDestino
         (segue.destinationViewController as! ChatView).userRemitente = nombreUserRemitente
-        
-    }
+    }*/
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -57,5 +74,6 @@ class sContactViewController: UIViewController, UITableViewDataSource {
     override func viewWillAppear(animated: Bool) {
         tableView.reloadData()
     }
+    
 
 }
