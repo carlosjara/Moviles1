@@ -1,0 +1,6 @@
+framework module Restofire {
+  umbrella header "Restofire-umbrella.h"
+
+  export *
+  module * { export * }
+}
