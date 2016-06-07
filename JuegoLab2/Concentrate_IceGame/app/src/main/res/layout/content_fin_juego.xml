@@ -9,8 +9,8 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="aplicaciones.carlosjara.com.concentrate_icegame.MainActivity"
-    tools:showIn="@layout/activity_main"
+    tools:context="aplicaciones.carlosjara.com.concentrate_icegame.FinJuego"
+    tools:showIn="@layout/activity_fin_juego"
     android:background="#6ce8fe">
 
     <TextView
@@ -35,28 +35,50 @@
         android:textStyle="bold"
         android:textSize="40sp"
         android:layout_below="@+id/TituloSeleccion1"
-        android:layout_above="@+id/BienvenidaText"
         android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/BienvenidaTxt"
-        android:id="@+id/BienvenidaText"
+        android:text="@string/GanadorTxt"
+        android:id="@+id/GanadorTxt"
         android:backgroundTint="#0105ff"
-        android:fontFamily="@string/BienvenidaTxt"
+        android:fontFamily="@string/Titulo1"
         android:textStyle="bold"
-        android:textSize="@dimen/abc_select_dialog_padding_start_material"
-        android:layout_marginBottom="61dp"
-        android:layout_above="@+id/BPlay"
+        android:textSize="40sp"
+        android:layout_marginTop="65dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JugadorGanador"
+        android:id="@+id/GanadorS"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@string/Titulo1"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PuntajeGanador"
+        android:id="@+id/PuntajeS"
+        android:fontFamily="@string/Titulo1"
+        android:textSize="18sp"
+        android:layout_below="@+id/GanadorS"
         android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/BJugar"
-        android:id="@+id/BPlay"
-        android:layout_centerVertical="true"
-        android:onClick="Iniciar"
-        android:layout_centerHorizontal="true" />
+        android:text="@string/juegonuevo"
+        android:id="@+id/JuegoNuevo"
+        android:layout_below="@+id/PuntajeS"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="66dp"
+        android:onClick="NuevoJuego"/>
+
+
 </RelativeLayout>

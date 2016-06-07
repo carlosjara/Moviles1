@@ -20,9 +20,24 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
     }
 
-    public void Iniciar(View view){
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        return super.onOptionsItemSelected(item);
+    }
+    public void aboutMenu(MenuItem item) {
+        Intent intent = new Intent(this,Acerca.class);
+        startActivityForResult(intent, 1);
+    }
+    public void Iniciar(View view){
         Intent intent = new Intent(this,SeleccionJugadores.class);
         startActivity(intent);
     }
+
 }

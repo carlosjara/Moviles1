@@ -29,6 +29,14 @@
         <activity
             android:name=".LogicaJuego"
             android:label="@string/title_activity_logica_juego"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FinJuego"
+            android:label="@string/title_activity_fin_juego"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Acerca"
+            android:label="@string/title_activity_acerca"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">IceGame</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">Acerca</string>
     <string name="BienvenidaTxt">Bienvenido</string>
     <string name="BJugar">Jugar</string>
 
@@ -8,16 +8,32 @@
     <string name="title_activity_seleccion_jugadores">Ice Game Jugadores</string>
     <string name="Titulo1">Ice Game</string>
     <string name="Titulo2">FOCUS BRAIN</string>
-    <string name="Selecciontxt">Selecciona la cantidad de jugadores</string>
-    <string name="BJugador1">1 Jugador</string>
-    <string name="BJugador2">2 Jugadores</string>
+    <string name="Selecciontxt">Ingresa la cantidad de jugadores</string>
+    <string name="IngresaNumero">Ingresa un numero</string>
+    <string name="BJugador2">Crear</string>
 
 
     <string name="title_activity_seleccion_nombres">Ice Game Nombres</string>
-    <string name="nombrePedir">ingrese el nombre</string>
+    <string name="nombrePedir">Ingrese el nombre</string>
+    <string name="jugarPedir">Jugador</string>
     <string name="Iniciar">Jugar</string>
     <string name="AlertaNombre">Es necesario que ingreses todos los nombres</string>
 
 
     <string name="title_activity_logica_juego">FOCUS _Jugando_ BRAIN</string>
+    <string name="ErrorClick">Seleccione otro</string>
+    <string name="jugador11">Jugador:</string>
+    <string name="puntaje11">Puntaje:</string>
+    <string name="juegonuevo">Juego Nuevo</string>
+
+    <string name="title_activity_fin_juego">Ice Game FIN</string>
+    <string name="GanadorTxt">GANADOR:</string>
+
+
+
+    <string name="title_activity_acerca">Ice Game Acerca</string>
+    <string name="Desarrollador">by. Carlos E. Jaramillo</string>
+    <string name="correo">Email. cjaramillo29@puj.edu.co</string>
+    <string name="gitHub">github. /carlosjara</string>
+
 </resources>
